@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  background: #eedbff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+}
+
+input[type=email],
+input[type=text],
+textarea {
+  display: block;
+  border: 2px solid #6505CC;
+}
+
+input[type=email],
+input[type=text] {
+  height: 20px;
+  padding: 3px;
+}
+
+input[type=email]::-webkit-input-placeholder,
+input[type=text]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: purple;
+  font-size: 16px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.submit {
+  display: flex;
+  margin: 0 auto;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  background: #6505CC;
+  font-size: 16px;
+  color: #eedbff;
+  cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+}
+
+.wrapper {
+  margin: 5rem auto;
+  max-width: 37.5%;
+}
+
+.wrapper > input:not([type=submit]),
+.wrapper > textarea {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
